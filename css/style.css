@@ -38,8 +38,15 @@ a {
 }
 
 img {
-    width: 40%;
-    margin: 0 0 0 10rem;
+    width: 100%;
+    padding:0 0 5rem 0;
+}
+
+@media (min-width: 768px) {
+    img {
+        width: 100%;
+        padding: 1rem 3rem 0 5rem;
+    }
 }
 
 .contenedor {
@@ -54,17 +61,40 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 3.2rem;
+    font-size: 2.2rem;
 }
 
 h4 {
     font-family: var(--fuentePrincipal);
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     margin: 0;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 3.2rem;
+    }
+    
+    h4 {
+        font-size: 2.4rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
 }
 
 p {
